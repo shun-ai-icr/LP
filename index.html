@@ -948,15 +948,15 @@ footer .logo{color:#fff;margin-bottom:8px;display:inline-block}
 
   /* ---------- Before/After（公式サイト掲載の症例） ---------- */
   var CASES = [
-    {b:'before2', a:'after2', n:'1回目',  t:'むくみ・リフトアップ',     d:'1回でも頬のむくみが引き、顔まわりがすっきり'},
-    {b:'before5', a:'after5', n:'3回目',  t:'たるみ・左右差',           d:'頬のたるみが上がり、フェイスラインがすっきり'},
-    {b:'before4', a:'after4', n:'4回目',  t:'むくみ・エラ張り',         d:'頬からあごにかけてのもたつきが取れ、小顔の印象に'},
-    {b:'before3', a:'after3', n:'10回目', t:'顔の左右差',               d:'左右の高さと輪郭のバランスが整い、正面の印象が変化'},
-    {b:'before',  a:'after',  n:'10回目', t:'フェイスライン・エラ張り', d:'エラの張りが和らぎ、あごまでのラインがシャープに'}
+    {b:'images/before2.jpg', a:'images/after2.jpg', n:'1回目',  t:'むくみ・リフトアップ',     d:'1回でも頬のむくみが引き、顔まわりがすっきり'},
+    {b:'images/before5.jpg', a:'images/after5.jpg', n:'3回目',  t:'たるみ・左右差',           d:'頬のたるみが上がり、フェイスラインがすっきり'},
+    {b:'images/before4.jpg', a:'images/after4.jpg', n:'4回目',  t:'むくみ・エラ張り',         d:'頬からあごにかけてのもたつきが取れ、小顔の印象に'},
+    {b:'images/before3.jpg', a:'images/after3.jpg', n:'10回目', t:'顔の左右差',               d:'左右の高さと輪郭のバランスが整い、正面の印象が変化'},
+    {b:'images/before.jpg',  a:'images/after.jpg',  n:'10回目', t:'フェイスライン・エラ張り', d:'エラの張りが和らぎ、あごまでのラインがシャープに'}
   ];
   var cs = document.getElementById('caseSlider');
   CASES.forEach(function(c){
-    cs.insertAdjacentHTML('beforeend','<div class="case"><div class="case-pair"><figure><img src="images/'+c.b+'.jpg" alt="施術前" loading="lazy"><figcaption>施術前</figcaption></figure><figure><img src="images/'+c.a+'.jpg" alt="施術'+c.n+'" loading="lazy"><figcaption>施術'+c.n+'</figcaption></figure></div><div class="case-body"><span class="tag">'+c.t+'</span><p>'+c.d+'</p></div></div>');
+    cs.insertAdjacentHTML('beforeend','<div class="case"><div class="case-pair"><figure><img src="'+c.b+'" alt="施術前" loading="lazy"><figcaption>施術前</figcaption></figure><figure><img src="'+c.a+'" alt="施術'+c.n+'" loading="lazy"><figcaption>施術'+c.n+'</figcaption></figure></div><div class="case-body"><span class="tag">'+c.t+'</span><p>'+c.d+'</p></div></div>');
   });
 
   /* ---------- Staff ---------- */
